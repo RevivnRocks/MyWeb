@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url("noProfile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+.linkbar{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    border-top: 1px aliceblue outset;
+    border-bottom: 1px aliceblue outset;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+.linkbtn{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    height: 25px;
+    width: 75px;
+    background-color: rgb(121, 7, 7);
+    display: flex;
+    justify-content: space-evenly;
+}
+#linkbtn1{
+    position:relative;
+    animation-name: linkentrence;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+#linkbtn2{
+    position:relative;
+    animation-name: linkentrence;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+#linkbtn3{
+    position:relative;
+    animation-name: linkentrence;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+@keyframes linkentrence{
+    form{transform: translateX(0px)}
+    to{transform: translateX(91vw)}
+}
+.main{
+    background: linear-gradient(rgb(0, 0, 0), white);
+    background-repeat: no-repeat;
+    height: 20000px;
+}
